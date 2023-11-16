@@ -8,10 +8,12 @@
   "main": "src/main.js",
   "scripts": {
     "lox": "node src/main",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "ast": "node scripts/GenerateAst.js",
+    "fmt": "prettier src scripts -wl && eslint --fix src scripts"
   },
-  "dependencies": {
-    "eslint": "^8.53.0"
+  "devDependencies": {
+    "eslint": "^8.53.0",
+    "prettier": "^3.1.0"
   },
   "eslintConfig": {
     "env": {
