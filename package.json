@@ -1,16 +1,27 @@
 {
-  "type": "module",
   "name": "jslox",
-  "version": "1.0.0",
   "description": "Lox interpreter",
-  "main": "index.js",
+  "version": "1.0.0",
+  "author": "Evgeny Averyanov",
+  "license": "MIT",
+  "type": "module",
+  "main": "src/main.js",
   "scripts": {
     "lox": "node src/main",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Evgeny Averyanov",
-  "license": "MIT",
-  "devDependencies": {
-    "prettier": "3.1.0"
+  "dependencies": {
+    "eslint": "^8.53.0"
+  },
+  "eslintConfig": {
+    "env": {
+      "node": true,
+      "es2021": true
+    },
+    "extends": "eslint:recommended",
+    "parserOptions": {
+      "ecmaVersion": "latest",
+      "sourceType": "module"
+    }
   }
 }
