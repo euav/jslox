@@ -8,8 +8,8 @@
   "main": "src/main.js",
   "scripts": {
     "lox": "node src/main",
-    "ast": "node scripts/GenerateAst.js",
-    "fmt": "prettier src scripts -wl && eslint --fix src scripts"
+    "ast": "node scripts/generate-ast.js",
+    "fmt": "prettier src scripts tests -wl && eslint --fix src scripts tests"
   },
   "devDependencies": {
     "eslint": "^8.53.0",
